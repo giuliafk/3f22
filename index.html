@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Objetivos do Ano</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #0b3d91, #000);
+            color: #6495ED;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .conteudo-principal {
+            margin: 2rem auto;
+            max-width: 800px;
+            text-align: center;
+            padding: 2rem;
+            border-radius: 15px;
+            background-color: rgba(26, 26, 46, 0.8);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+
+        .titulo-principal {
+            font-size: 2.5rem;
+            color: #00FFFF;
+            text-shadow: 2px 2px 15px rgba(255, 215, 0, 0.7);
+            margin-bottom: 1rem;
+        }
+        .botoes {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .botao {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            background: #87CEFA;
+            color:		#000000;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(75, 0, 130, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .botao:hover {
+            background: #00008B;
+            box-shadow: 0 0 15px rgba(106, 13, 173, 0.8);
+        }
+
+        .botao.ativo {
+            background: #87CEFA;
+            box-shadow: 0 0 20px rgba(106, 13, 173, 1);
+        }
+        .abas-textos {
+            margin-top: 2rem;
+        }
+
+        .aba-conteudo {
+            display: none;
+            padding: 1rem;
+            border-radius: 8px;
+            background-color: rgba(51, 51, 77, 0.9);
+            box-shadow: 0 0 10px rgba(51, 51, 77, 0.8);
+        }
+
+        .aba-conteudo.ativo {
+            display: block;
+        }
+
+        .aba-conteudo h3 {
+            color: #ffcc00;
+            text-shadow: 2px 2px 10px rgba(255, 204, 0, 0.8);
+            margin-bottom: 0.5rem;
+        }
+
+        .contador {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .contador-digito {
+            text-align: center;
+        }
+
+        .contador-digito-numero {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.7);
+        }
+
+        .contador-digito-texto {
+            color: #b3b3b3;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="conteudo-principal">
+        <h2 class="titulo-principal">Meus Objetivos do Ano<span>:</span></h2>
+        <div class="conteudo">
+            <div class="botoes">
+                <button class="botao ativo">Formar</button>
+                <button class="botao">Fazer Academia</button>
+                <button class="botao">Iniciar investimentos</button>
+                <button class="botao">Trabalhar</button>
+            </div>
+            <div class="abas-textos">
+                <div class="aba-conteudo ativo">
+                    <h3>Tempo para completar o objetivo</h3>
+                    <h4>Aproximadamente:</h4>
+                    <div class="contador">
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="dias0">100</p>
+                            <p class="contador-digito-texto">dias</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="horas0">00</p>
+                            <p class="contador-digito-texto">horas</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="min0">00</p>
+                            <p class="contador-digito-texto">min</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="seg0">00</p>
+                            <p class="contador-digito-texto">seg</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>

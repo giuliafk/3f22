@@ -1,0 +1,103 @@
+body {
+    background: linear-gradient(to bottom, #0d1b2a, #1b263b);
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Seção principal */
+.conteudo-principal {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: rgba(16, 42, 67, 0.9); /* Transparência para um efeito mais imersivo */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Título principal */
+.titulo-principal {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #ffd700; /* Tom dourado espacial */
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.9), 0 0 20px rgba(255, 255, 255, 0.5);
+    margin-bottom: 1rem;
+}
+
+/* Botões */
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem; /* Espaço uniforme entre os botões */
+    margin: 1rem 0;
+}
+
+.botao {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background: #627d98;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.botao:hover {
+    background: #a8dadc;
+    box-shadow: 0 0 10px rgba(168, 218, 220, 0.7);
+}
+
+.botao.ativo {
+    background: #4a536b;
+    box-shadow: 0 0 15px rgba(74, 83, 107, 0.9);
+}
+
+/* Estilo para abas de conteúdo */
+.abas-textos {
+    margin-top: 1.5rem;
+}
+
+.aba-conteudo {
+    display: none; /* Oculta as abas não ativas */
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #334e68; /* Cor espacial com tom profundo */
+    box-shadow: 0 0 15px rgba(51, 78, 104, 0.8);
+    color: #ffffff;
+}
+
+.aba-conteudo.ativo {
+    display: block; /* Mostra a aba ativa */
+}
+
+/* Estilo dos títulos das abas */
+.aba-conteudo h3 {
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+
+/* Estilo do contador */
+.contador {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.contador-digito {
+    text-align: center;
+}
+
+.contador-digito-numero {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.7);
+}
+
+.contador-digito-texto {
+    color: #d3d3d3;
+}
